@@ -1,6 +1,8 @@
 
 source("R/setup.R")
 source("R/functions.R")
+source("reports/render_all_reports.R")
+
 
 sites <- list.dirs("data/raw", recursive = FALSE, full.names = FALSE)
 

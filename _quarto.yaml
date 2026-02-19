@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "CIPSE RDS Coupon Audit"
+navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Nairobi
+        href: Nairobi.qmd
+      - text: Eldoret
+        href: Eldoret.qmd
+      - text: Kisumu
+        href: Kisumu.qmd
+      - text: Mombasa
+        href: Mombasa.qmd
+format:
+  html:
+    theme: cosmo
+    toc: true
