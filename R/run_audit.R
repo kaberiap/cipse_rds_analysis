@@ -1,8 +1,10 @@
 
-source("../R/functions.R")
+source("R/setup.R")
+source("R/functions.R")
 
-site_name <- params$site
+sites <- list.dirs("data/raw", recursive = FALSE, full.names = FALSE)
 
-results <- run_rds_audit(site_name)
-summary_tbl <- results$summary
-dup_tbl <- results$duplicates
+results <- lapply(sites, run_rds_audit)
+names(results) <- sites
+
+print("All sites processed successfully.")

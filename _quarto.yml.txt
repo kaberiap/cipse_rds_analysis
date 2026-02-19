@@ -1,0 +1,10 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "CIPSE RDS Audit Dashboard"
+  navbar:
+    left:
+      - text: Home
+        href: index.html

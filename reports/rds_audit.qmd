@@ -21,24 +21,17 @@ execute:
 
 This document summarizes the reconciliation between coupon codes in the tracking form and the main survey dataset for the Eldoret RDS study.
 
-## 2. Coupon Summary Table
+```{r, echo=TRUE}
+source(here::here("R", "setup.R"))
+source(here::here("R", "functions.R"))
 
-```{r, echo=FALSE}
-library(tibble)
-library(dplyr)
-library(ggplot2)
+results <- run_rds_audit(params$site)
 
-coupon_summary <- tribble(
-  ~Category, ~Count,
-  "Coupons Issued (CTF)", 437,
-  "Survey Records (Main Data)", 432,
-  "Orphan Coupons", 27,
-  "Valid Coupons (Cleaned CTF)", 410,
-  "Valid Coupons in Both CTF & Survey", 390,
-  "Invalid Coupons in Survey Only", 31,
-  "Orphan Coupons Used in Survey", 24,
-  "Valid Coupons Never Used", 18
-)
-
-coupon_summary
 ```
+
+
+
+
+
+
+
