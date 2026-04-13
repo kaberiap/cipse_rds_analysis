@@ -1,0 +1,71 @@
+---
+title: "RDS Audit Dashboard"
+format: dashboard
+---
+
+```{r setup, include=FALSE}
+source("R/setup.R")
+source("R/functions.R")
+
+# Run audits for all sites
+sites <- c("Nairobi", "Eldoret", "Kisumu", "Mombasa")
+results <- lapply(sites, run_rds_audit)
+names(results) <- sites
+
+# Combine summaries
+all_summaries <- bind_rows(
+  lapply(names(results), function(site) {
+    results[[site]]$summary %>% mutate(Site = site)
+  })
+) %>% 
+  pivot_wider(names_from = Site, values_from = value)
+
+# Prepare data for plots
+flow_data <- bind_rows(
+  lapply(names(results), function(site) {
+    results[[site]]$summary %>% 
+      filter(metric %in% c("Total CTF coupons", "Clean CTF Coupons", "Total Survey Records", "Valid Coupon Matches")) %>%
+      mutate(stage = case_when(
+        metric == "Total CTF coupons" ~ "Coupons Issued",
+        metric == "Clean CTF Coupons" ~ "CTF Cleaned",
+        metric == "Total Survey Records" ~ "Survey Interviews",
+        metric == "Valid Coupon Matches" ~ "Valid Matches"
+      )) %>%
+      select(stage, value) %>%
+      mutate(Site = site)
+  })
+)
+```
+
+RDS Audit Dashboard
+===================
+
+Column {data-width=600}
+-----------------------
+
+### Summary Table
+
+```{r}
+DT::datatable(all_summaries, options = list(pageLength = 10))
+```
+
+Column {data-width=400}
+-----------------------
+
+### Flow Diagram
+
+```{r}
+p <- ggplot(flow_data, aes(x = stage, y = value, fill = Site)) +
+  geom_col(position = "dodge") +
+  theme_minimal() +
+  labs(title = "RDS Reconciliation Flow by Site", y = "Count", x = "")
+plotly::ggplotly(p)
+```
+
+### Site Details
+
+```{r}
+# For simplicity, show a table for one site, or add tabs
+# But flexdashboard can have multiple pages
+```</content>
+<parameter name="filePath">g:\GitHub\APHRC\cipse_rds_analysis\dashboard.qmd

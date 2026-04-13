@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "reports/rds_audit.html",
+    "href": "reports/rds_audit.html",
+    "title": "CIPSE RDS Analysis",
+    "section": "",
+    "text": "This document summarizes the reconciliation between coupon codes in the tracking form and the main survey dataset for the Eldoret RDS study.\n\n\nCode\nsource(here::here(\"R\", \"setup.R\"))\nsource(here::here(\"R\", \"functions.R\"))\n\nresults &lt;- run_rds_audit(params$site)"
+  },
+  {
+    "objectID": "reports/rds_audit.html#overview",
+    "href": "reports/rds_audit.html#overview",
+    "title": "CIPSE RDS Analysis",
+    "section": "",
+    "text": "This document summarizes the reconciliation between coupon codes in the tracking form and the main survey dataset for the Eldoret RDS study.\n\n\nCode\nsource(here::here(\"R\", \"setup.R\"))\nsource(here::here(\"R\", \"functions.R\"))\n\nresults &lt;- run_rds_audit(params$site)"
+  },
+  {
+    "objectID": "Mombasa.html",
+    "href": "Mombasa.html",
+    "title": "Mombasa",
+    "section": "",
+    "text": "source(\"R/setup.R\")\n\nLoading required package: pacman\n\n\nWarning: package 'pacman' was built under R version 4.5.3\n\nsource(\"R/functions.R\")\n\nrun_rds_audit(\"Mombasa\")\n\nRunning RDS audit for: Mombasa\n\n\nAudit complete for: Mombasa\n\n\n$summary\n# A tibble: 8 × 2\n  metric                       value\n  &lt;chr&gt;                        &lt;int&gt;\n1 Total CTF coupons              421\n2 Total Survey Records           417\n3 Orphan Coupons (CTF)           211\n4 Clean CTF Coupons              413\n5 Valid Coupon Matches           378\n6 Invalid Survey Coupons          28\n7 Unused Issued Coupons           35\n8 Orphan-linked Survey Records     0\n\n$duplicates\n# A tibble: 11 × 2\n   coupon       n\n   &lt;chr&gt;    &lt;int&gt;\n 1 233425       2\n 2 31146641     2\n 3 31146644     2\n 4 31146645     2\n 5 33           2\n 6 42           2\n 7 421          2\n 8 425          2\n 9 431          2\n10 435          2\n11 451144       2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CIPSE RDS Analysis",
+    "section": "",
+    "text": "This website provides analysis and audit results for the CIPSE RDS (Respondent-Driven Sampling) study across multiple sites: Nairobi, Eldoret, Kisumu, and Mombasa.\n\n\n\nDashboard: Interactive summary of audit results across all sites.\nSite Reports: Detailed reports for each individual site."
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "CIPSE RDS Analysis",
+    "section": "",
+    "text": "This website provides analysis and audit results for the CIPSE RDS (Respondent-Driven Sampling) study across multiple sites: Nairobi, Eldoret, Kisumu, and Mombasa.\n\n\n\nDashboard: Interactive summary of audit results across all sites.\nSite Reports: Detailed reports for each individual site."
+  },
+  {
+    "objectID": "index.html#quick-summary",
+    "href": "index.html#quick-summary",
+    "title": "CIPSE RDS Analysis",
+    "section": "2 Quick Summary",
+    "text": "2 Quick Summary\n\n\n# A tibble: 8 × 2\n  metric                       Total\n  &lt;chr&gt;                        &lt;int&gt;\n1 Clean CTF Coupons             1530\n2 Invalid Survey Coupons         117\n3 Orphan Coupons (CTF)           303\n4 Orphan-linked Survey Records    41\n5 Total CTF coupons             1667\n6 Total Survey Records          1587\n7 Unused Issued Coupons          100\n8 Valid Coupon Matches          1430"
+  },
+  {
+    "objectID": "Eldoret.html",
+    "href": "Eldoret.html",
+    "title": "Eldoret",
+    "section": "",
+    "text": "source(\"R/setup.R\")\n\nLoading required package: pacman\n\n\nWarning: package 'pacman' was built under R version 4.5.3\n\nsource(\"R/functions.R\")\n\nrun_rds_audit(\"Eldoret\")\n\nRunning RDS audit for: Eldoret\n\n\nAudit complete for: Eldoret\n\n\n$summary\n# A tibble: 8 × 2\n  metric                       value\n  &lt;chr&gt;                        &lt;int&gt;\n1 Total CTF coupons              437\n2 Total Survey Records           432\n3 Orphan Coupons (CTF)            27\n4 Clean CTF Coupons              408\n5 Valid Coupon Matches           390\n6 Invalid Survey Coupons          31\n7 Unused Issued Coupons           18\n8 Orphan-linked Survey Records    24\n\n$duplicates\n# A tibble: 11 × 2\n   coupon         n\n   &lt;chr&gt;      &lt;int&gt;\n 1 113223211      2\n 2 113223212      2\n 3 113223213      2\n 4 1132232132     2\n 5 132            2\n 6 216242143      2\n 7 22331153       2\n 8 31112          2\n 9 314            2\n10 3323           2\n11 335            2"
+  },
+  {
+    "objectID": "Kisumu.html",
+    "href": "Kisumu.html",
+    "title": "Kisumu",
+    "section": "",
+    "text": "source(\"R/setup.R\")\n\nLoading required package: pacman\n\n\nWarning: package 'pacman' was built under R version 4.5.3\n\nsource(\"R/functions.R\")\n\nrun_rds_audit(\"Kisumu\")\n\nRunning RDS audit for: Kisumu\n\n\nAudit complete for: Kisumu\n\n\n$summary\n# A tibble: 8 × 2\n  metric                       value\n  &lt;chr&gt;                        &lt;int&gt;\n1 Total CTF coupons              388\n2 Total Survey Records           372\n3 Orphan Coupons (CTF)            25\n4 Clean CTF Coupons              363\n5 Valid Coupon Matches           348\n6 Invalid Survey Coupons          21\n7 Unused Issued Coupons           15\n8 Orphan-linked Survey Records    17\n\n$duplicates\n# A tibble: 3 × 2\n  coupon      n\n  &lt;chr&gt;   &lt;int&gt;\n1 1133        2\n2 12311       2\n3 1241122     2"
+  },
+  {
+    "objectID": "Nairobi.html",
+    "href": "Nairobi.html",
+    "title": "Nairobi",
+    "section": "",
+    "text": "source(\"R/setup.R\")\n\nLoading required package: pacman\n\n\nWarning: package 'pacman' was built under R version 4.5.3\n\nsource(\"R/functions.R\")\n\nrun_rds_audit(\"Nairobi\")\n\nRunning RDS audit for: Nairobi\n\n\nAudit complete for: Nairobi\n\n\n$summary\n# A tibble: 8 × 2\n  metric                       value\n  &lt;chr&gt;                        &lt;int&gt;\n1 Total CTF coupons              421\n2 Total Survey Records           366\n3 Orphan Coupons (CTF)            40\n4 Clean CTF Coupons              346\n5 Valid Coupon Matches           314\n6 Invalid Survey Coupons          37\n7 Unused Issued Coupons           32\n8 Orphan-linked Survey Records     0\n\n$duplicates\n# A tibble: 14 × 2\n   coupon           n\n   &lt;chr&gt;        &lt;int&gt;\n 1 13132211         2\n 2 13133231         2\n 3 131332315        2\n 4 21               2\n 5 21111            2\n 6 2111131          2\n 7 211113111112     3\n 8 2111132          2\n 9 21111322         2\n10 211113221        2\n11 2421334112       2\n12 3                2\n13 323133           2\n14 32431            2"
+  }
+]

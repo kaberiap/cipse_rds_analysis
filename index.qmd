@@ -13,29 +13,33 @@ execute:
   message: false
 ---
 
+## Overview
 
-## 1. Overview
+This website provides analysis and audit results for the CIPSE RDS (Respondent-Driven Sampling) study across multiple sites: Nairobi, Eldoret, Kisumu, and Mombasa.
 
-This document summarizes the reconciliation between coupon codes in the tracking form and the main survey dataset for the Eldoret RDS study.
+### Key Features
 
-## 2. Coupon Summary Table
+- **Dashboard**: Interactive summary of audit results across all sites.
+- **Site Reports**: Detailed reports for each individual site.
+
+## Quick Summary
 
 ```{r, echo=FALSE}
-library(tibble)
-library(dplyr)
-library(ggplot2)
+source("R/setup.R")
+source("R/functions.R")
 
-coupon_summary <- tribble(
-  ~Category, ~Count,
-  "Coupons Issued (CTF)", 437,
-  "Survey Records (Main Data)", 432,
-  "Orphan Coupons", 27,
-  "Valid Coupons (Cleaned CTF)", 410,
-  "Valid Coupons in Both CTF & Survey", 390,
-  "Invalid Coupons in Survey Only", 31,
-  "Orphan Coupons Used in Survey", 24,
-  "Valid Coupons Never Used", 18
-)
+sites <- c("Nairobi", "Eldoret", "Kisumu", "Mombasa")
+results <- lapply(sites, run_rds_audit)
+names(results) <- sites
 
-coupon_summary
+# Overall summary
+overall <- bind_rows(
+  lapply(names(results), function(site) {
+    results[[site]]$summary %>% mutate(Site = site)
+  })
+) %>% 
+  group_by(metric) %>% 
+  summarise(Total = sum(value), .groups = "drop")
+
+overall
 ```
