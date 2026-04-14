@@ -62,10 +62,54 @@ p <- ggplot(flow_data, aes(x = stage, y = value, fill = Site)) +
 plotly::ggplotly(p)
 ```
 
-### Site Details
+## Site Results
+
+### Nairobi
 
 ```{r}
-# For simplicity, show a table for one site, or add tabs
-# But flexdashboard can have multiple pages
-```</content>
+results[["Nairobi"]]$summary
+```
+
+#### Nairobi Duplicate Coupons
+
+```{r}
+results[["Nairobi"]]$duplicates
+```
+
+### Eldoret
+
+```{r}
+results[["Eldoret"]]$summary
+```
+
+#### Eldoret Duplicate Coupons
+
+```{r}
+results[["Eldoret"]]$duplicates
+```
+
+### Kisumu
+
+```{r}
+results[["Kisumu"]]$summary
+```
+
+#### Kisumu Duplicate Coupons
+
+```{r}
+results[["Kisumu"]]$duplicates
+```
+
+### Mombasa
+
+```{r}
+results[["Mombasa"]]$summary
+```
+
+#### Mombasa Duplicate Coupons
+
+```{r}
+results[["Mombasa"]]$duplicates
+```
+</content>
 <parameter name="filePath">g:\GitHub\APHRC\cipse_rds_analysis\dashboard.qmd

@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
         
       </div>
     </div>
-<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-rds-audit-dashboard" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#rds-audit-dashboard" data-scrolling="false" href="#rds-audit-dashboard" aria-controls="rds-audit-dashboard" aria-selected="true"><span class="nav-link-text">RDS Audit Dashboard</span></a></li><li class="nav-item" role="presentation"><a id="tab-for-simplicity-show-a-table-for-one-site-or-add-tabs" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#for-simplicity-show-a-table-for-one-site-or-add-tabs" data-scrolling="false" href="#for-simplicity-show-a-table-for-one-site-or-add-tabs" aria-controls="for-simplicity-show-a-table-for-one-site-or-add-tabs" aria-selected="false"><span class="nav-link-text">For simplicity, show a table for one site, or add tabs</span></a></li><li class="nav-item" role="presentation"><a id="tab-but-flexdashboard-can-have-multiple-pages" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#but-flexdashboard-can-have-multiple-pages" data-scrolling="false" href="#but-flexdashboard-can-have-multiple-pages" aria-controls="but-flexdashboard-can-have-multiple-pages" aria-selected="false"><span class="nav-link-text">But flexdashboard can have multiple pages</span></a></li></ul></div></div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-rds-audit-dashboard" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#rds-audit-dashboard" data-scrolling="false" href="#rds-audit-dashboard" aria-controls="rds-audit-dashboard" aria-selected="true"><span class="nav-link-text">RDS Audit Dashboard</span></a></li></ul></div></div>
 </nav>
 </header>
 <div id="quarto-search-results"></div>
@@ -142,15 +142,60 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="bslib-grid-item html-fill-item tab-content bslib-grid" data-layout="fill" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div id="rds-audit-dashboard" class="dashboard-page tab-pane show active html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-rds-audit-dashboard">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="datatables html-widget html-fill-item html-fill-container" id="htmlwidget-e63608cc9929ee7c96c6" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-e63608cc9929ee7c96c6">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Total CTF coupons","Total Survey Records","Orphan Coupons (CTF)","Clean CTF Coupons","Valid Coupon Matches","Invalid Survey Coupons","Unused Issued Coupons","Orphan-linked Survey Records"],[421,366,40,346,314,37,32,0],[437,432,27,408,390,31,18,24],[388,372,25,363,348,21,15,17],[421,417,211,413,378,28,35,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>metric<\/th>\n      <th>Nairobi<\/th>\n      <th>Eldoret<\/th>\n      <th>Kisumu<\/th>\n      <th>Mombasa<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"bPaginate":false,"dom":"ifrt","language":{"info":"Showing _TOTAL_ entries"},"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"metric","targets":1},{"name":"Nairobi","targets":2},{"name":"Eldoret","targets":3},{"name":"Kisumu","targets":4},{"name":"Mombasa","targets":5}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="plotly html-widget html-fill-item html-fill-container" id="htmlwidget-2d14dd78eeef71728f78" style="width:100%;height:406px;"></div>
+<script type="application/json" data-for="htmlwidget-2d14dd78eeef71728f78">{"x":{"data":[{"orientation":"v","width":[0.22500000000000009,0.22500000000000053,0.22500000000000009,0.22500000000000053],"base":[0,0,0,0],"x":[0.66250000000000009,2.6625000000000001,1.6625000000000001,3.6625000000000001],"y":[437,432,408,390],"text":["stage: Coupons Issued<br />value: 437<br />Site: Eldoret","stage: Survey Interviews<br />value: 432<br />Site: Eldoret","stage: CTF Cleaned<br />value: 408<br />Site: Eldoret","stage: Valid Matches<br />value: 390<br />Site: Eldoret"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Eldoret","legendgroup":"Eldoret","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.22500000000000009,0.22499999999999964,0.22500000000000009,0.22499999999999964],"base":[0,0,0,0],"x":[0.88749999999999996,2.8875000000000002,1.8875,3.8875000000000002],"y":[388,372,363,348],"text":["stage: Coupons Issued<br />value: 388<br />Site: Kisumu","stage: Survey Interviews<br />value: 372<br />Site: Kisumu","stage: CTF Cleaned<br />value: 363<br />Site: Kisumu","stage: Valid Matches<br />value: 348<br />Site: Kisumu"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(124,174,0,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Kisumu","legendgroup":"Kisumu","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.22500000000000009,0.22499999999999964,0.22499999999999987,0.22499999999999964],"base":[0,0,0,0],"x":[1.1125,3.1124999999999998,2.1124999999999998,4.1124999999999998],"y":[421,417,413,378],"text":["stage: Coupons Issued<br />value: 421<br />Site: Mombasa","stage: Survey Interviews<br />value: 417<br />Site: Mombasa","stage: CTF Cleaned<br />value: 413<br />Site: Mombasa","stage: Valid Matches<br />value: 378<br />Site: Mombasa"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(0,191,196,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Mombasa","legendgroup":"Mombasa","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.22500000000000009,0.22500000000000053,0.22499999999999964,0.22499999999999964],"base":[0,0,0,0],"x":[1.3374999999999999,3.3374999999999999,2.3374999999999999,4.3375000000000004],"y":[421,366,346,314],"text":["stage: Coupons Issued<br />value: 421<br />Site: Nairobi","stage: Survey Interviews<br />value: 366<br />Site: Nairobi","stage: CTF Cleaned<br />value: 346<br />Site: Nairobi","stage: Valid Matches<br />value: 314<br />Site: Nairobi"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(199,124,255,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Nairobi","legendgroup":"Nairobi","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":22.648401826484022,"l":43.105022831050242},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"RDS Reconciliation Flow by Site","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,4.5999999999999996],"tickmode":"array","ticktext":["Coupons Issued","CTF Cleaned","Survey Interviews","Valid Matches"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["Coupons Issued","CTF Cleaned","Survey Interviews","Valid Matches"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-21.850000000000001,458.85000000000002],"tickmode":"array","ticktext":["0","100","200","300","400"],"tickvals":[0,100,200,300,400],"categoryorder":"array","categoryarray":["0","100","200","300","400"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716894984},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Count","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Site","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"639071fd58d3":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"639071fd58d3","visdat":{"639071fd58d3":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
-grid-auto-rows: minmax(0, 1fr);">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<div class="cell-output-display html-fill-item html-fill-container">
-<div class="datatables html-widget html-fill-item html-fill-container" id="htmlwidget-3fdfc46f2e95fb34a53b" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-3fdfc46f2e95fb34a53b">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8"],["Total CTF coupons","Total Survey Records","Orphan Coupons (CTF)","Clean CTF Coupons","Valid Coupon Matches","Invalid Survey Coupons","Unused Issued Coupons","Orphan-linked Survey Records"],[421,366,40,346,314,37,32,0],[437,432,27,408,390,31,18,24],[388,372,25,363,348,21,15,17],[421,417,211,413,378,28,35,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>metric<\/th>\n      <th>Nairobi<\/th>\n      <th>Eldoret<\/th>\n      <th>Kisumu<\/th>\n      <th>Mombasa<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"bPaginate":false,"dom":"ifrt","language":{"info":"Showing _TOTAL_ entries"},"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"metric","targets":1},{"name":"Nairobi","targets":2},{"name":"Eldoret","targets":3},{"name":"Kisumu","targets":4},{"name":"Mombasa","targets":5}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
+<pre><code># A tibble: 8 × 2
+  metric                       value
+  &lt;chr&gt;                        &lt;int&gt;
+1 Total CTF coupons              421
+2 Total Survey Records           366
+3 Orphan Coupons (CTF)            40
+4 Clean CTF Coupons              346
+5 Valid Coupon Matches           314
+6 Invalid Survey Coupons          37
+7 Unused Issued Coupons           32
+8 Orphan-linked Survey Records     0</code></pre>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -159,16 +204,28 @@ grid-auto-rows: minmax(0, 1fr);">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-</div>
-</div>
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<div class="cell-output-display html-fill-item html-fill-container">
-<div class="plotly html-widget html-fill-item html-fill-container" id="htmlwidget-5505bd35819348e288ff" style="width:100%;height:406px;"></div>
-<script type="application/json" data-for="htmlwidget-5505bd35819348e288ff">{"x":{"data":[{"orientation":"v","width":[0.22500000000000009,0.22500000000000053,0.22500000000000009,0.22500000000000053],"base":[0,0,0,0],"x":[0.66250000000000009,2.6625000000000001,1.6625000000000001,3.6625000000000001],"y":[437,432,408,390],"text":["stage: Coupons Issued<br />value: 437<br />Site: Eldoret","stage: Survey Interviews<br />value: 432<br />Site: Eldoret","stage: CTF Cleaned<br />value: 408<br />Site: Eldoret","stage: Valid Matches<br />value: 390<br />Site: Eldoret"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Eldoret","legendgroup":"Eldoret","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.22500000000000009,0.22499999999999964,0.22500000000000009,0.22499999999999964],"base":[0,0,0,0],"x":[0.88749999999999996,2.8875000000000002,1.8875,3.8875000000000002],"y":[388,372,363,348],"text":["stage: Coupons Issued<br />value: 388<br />Site: Kisumu","stage: Survey Interviews<br />value: 372<br />Site: Kisumu","stage: CTF Cleaned<br />value: 363<br />Site: Kisumu","stage: Valid Matches<br />value: 348<br />Site: Kisumu"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(124,174,0,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Kisumu","legendgroup":"Kisumu","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.22500000000000009,0.22499999999999964,0.22499999999999987,0.22499999999999964],"base":[0,0,0,0],"x":[1.1125,3.1124999999999998,2.1124999999999998,4.1124999999999998],"y":[421,417,413,378],"text":["stage: Coupons Issued<br />value: 421<br />Site: Mombasa","stage: Survey Interviews<br />value: 417<br />Site: Mombasa","stage: CTF Cleaned<br />value: 413<br />Site: Mombasa","stage: Valid Matches<br />value: 378<br />Site: Mombasa"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(0,191,196,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Mombasa","legendgroup":"Mombasa","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.22500000000000009,0.22500000000000053,0.22499999999999964,0.22499999999999964],"base":[0,0,0,0],"x":[1.3374999999999999,3.3374999999999999,2.3374999999999999,4.3375000000000004],"y":[421,366,346,314],"text":["stage: Coupons Issued<br />value: 421<br />Site: Nairobi","stage: Survey Interviews<br />value: 366<br />Site: Nairobi","stage: CTF Cleaned<br />value: 346<br />Site: Nairobi","stage: Valid Matches<br />value: 314<br />Site: Nairobi"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(199,124,255,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Nairobi","legendgroup":"Nairobi","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":40.840182648401829,"r":7.3059360730593621,"b":22.648401826484022,"l":43.105022831050242},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"RDS Reconciliation Flow by Site","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,4.5999999999999996],"tickmode":"array","ticktext":["Coupons Issued","CTF Cleaned","Survey Interviews","Valid Matches"],"tickvals":[1,2,3,4],"categoryorder":"array","categoryarray":["Coupons Issued","CTF Cleaned","Survey Interviews","Valid Matches"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-21.850000000000001,458.85000000000002],"tickmode":"array","ticktext":["0","100","200","300","400"],"tickvals":[0,100,200,300,400],"categoryorder":"array","categoryarray":["0","100","200","300","400"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716894984},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Count","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Site","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"325867946052":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"325867946052","visdat":{"325867946052":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
+<pre><code># A tibble: 14 × 2
+   coupon           n
+   &lt;chr&gt;        &lt;int&gt;
+ 1 13132211         2
+ 2 13133231         2
+ 3 131332315        2
+ 4 21               2
+ 5 21111            2
+ 6 2111131          2
+ 7 211113111112     3
+ 8 2111132          2
+ 9 21111322         2
+10 211113221        2
+11 2421334112       2
+12 3                2
+13 323133           2
+14 32431            2</code></pre>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -178,17 +235,22 @@ grid-auto-rows: minmax(0, 1fr);">
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-</div>
-</div>
-</div>
-<div id="for-simplicity-show-a-table-for-one-site-or-add-tabs" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-for-simplicity-show-a-table-for-one-site-or-add-tabs">
-
-</div>
-<div id="but-flexdashboard-can-have-multiple-pages" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-but-flexdashboard-can-have-multiple-pages">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
-<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<p>``` <parameter name="filePath">g:_rds_analysis.qmd</parameter></p>
+<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
+<pre><code># A tibble: 8 × 2
+  metric                       value
+  &lt;chr&gt;                        &lt;int&gt;
+1 Total CTF coupons              437
+2 Total Survey Records           432
+3 Orphan Coupons (CTF)            27
+4 Clean CTF Coupons              408
+5 Valid Coupon Matches           390
+6 Invalid Survey Coupons          31
+7 Unused Issued Coupons           18
+8 Orphan-linked Survey Records    24</code></pre>
+</div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -196,10 +258,140 @@ grid-auto-rows: minmax(0, 1fr);">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
+<pre><code># A tibble: 11 × 2
+   coupon         n
+   &lt;chr&gt;      &lt;int&gt;
+ 1 113223211      2
+ 2 113223212      2
+ 3 113223213      2
+ 4 1132232132     2
+ 5 132            2
+ 6 216242143      2
+ 7 22331153       2
+ 8 31112          2
+ 9 314            2
+10 3323           2
+11 335            2</code></pre>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
+<pre><code># A tibble: 8 × 2
+  metric                       value
+  &lt;chr&gt;                        &lt;int&gt;
+1 Total CTF coupons              388
+2 Total Survey Records           372
+3 Orphan Coupons (CTF)            25
+4 Clean CTF Coupons              363
+5 Valid Coupon Matches           348
+6 Invalid Survey Coupons          21
+7 Unused Issued Coupons           15
+8 Orphan-linked Survey Records    17</code></pre>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
+<pre><code># A tibble: 3 × 2
+  coupon      n
+  &lt;chr&gt;   &lt;int&gt;
+1 1133        2
+2 12311       2
+3 1241122     2</code></pre>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
+<pre><code># A tibble: 8 × 2
+  metric                       value
+  &lt;chr&gt;                        &lt;int&gt;
+1 Total CTF coupons              421
+2 Total Survey Records           417
+3 Orphan Coupons (CTF)           211
+4 Clean CTF Coupons              413
+5 Valid Coupon Matches           378
+6 Invalid Survey Coupons          28
+7 Unused Issued Coupons           35
+8 Orphan-linked Survey Records     0</code></pre>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
+<pre><code># A tibble: 11 × 2
+   coupon       n
+   &lt;chr&gt;    &lt;int&gt;
+ 1 233425       2
+ 2 31146641     2
+ 3 31146644     2
+ 4 31146645     2
+ 5 33           2
+ 6 42           2
+ 7 421          2
+ 8 425          2
+ 9 431          2
+10 435          2
+11 451144       2</code></pre>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<p> <parameter name="filePath">g:_rds_analysis.qmd</parameter></p>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
 
-
-<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
-
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
